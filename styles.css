@@ -13,16 +13,40 @@ body {
 }
 .main-bg-color{
     background-color: #4A909D;
+    
+}
+.form-group label{
+display: flex;
+}
+.header-section{
+    background-color: #4A909D;
+    background: transparent url('img/Paper.png') 0% 0% no-repeat padding-box;
 }
 hr{background-color: white;}
 .form-box {
     background-color: #f04f88;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     padding: 30px;
     color: #fff;
+    width: 450px;
 }
-
+.form-box-header{
+    justify-content: center;
+    align-items: center ;
+}
+.form-box-header h3{
+    margin: 0;
+    margin-left: 145px;
+}
+.form-box-header h4{
+    margin-top: 22px;
+    /* margin-left: 145px; */
+}
+.form-box-header p{
+    line-height: 0;
+    /* margin-bottom: 0; */
+}
 .form-control::placeholder {
     color: #b0b0b0;
 }
@@ -48,6 +72,7 @@ hr{background-color: white;}
     font-weight: 900;
     font-size: 60px;
     font-family: fantasy
+    
 }
 .re2aya-tabeeb{
     color: white;
@@ -337,7 +362,7 @@ hr{background-color: white;}
 
 /* Testimonial Section */
 .testimonial-section {
-    background-color: #04584e;
+    background-color: #00414F;
     color: white;
     padding: 40px 0;
 }
