@@ -40,6 +40,9 @@ hr{background-color: white;}
     color: #fff;
     margin-bottom: 20px;
 }
+.otlob-tabeeb-service{
+    margin: 55px 0;
+}
 .otlob-tabeeb{
     color: white;
     font-weight: 900;
@@ -171,23 +174,165 @@ hr{background-color: white;}
 }
 
 .service-box {
-    background-color: #3EB7AC;
+    background-color: #E8308A;
     border-radius: 15px;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 15px 0;
     color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+.visit-tabeeb-now-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+
+}
+.visit-tabeeb-now-ehgez{
+   display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+
+}
+.tamreed-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+}
+.tamreed-ehgez{
+    display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+}
+.elag-tabe3y-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+}
+.elag-tabe3y-ehgez{
+    display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+}
+
+.visit-tabeeb-now-ehgez .btn-book{
+    margin: 70px 0;
+}
+.tamreed-ehgez .btn-book{
+    margin: 70px 0;
+}
+.elag-tabe3y-ehgez .btn-book{
+    margin: 70px 0;
+}
+.service-box:hover .visit-tabeeb-now-box{
+    display: none;
+}
+.service-box:hover .visit-tabeeb-now-ehgez{
+    display: block;
+}
+.service-box:hover .tamreed-box{
+    display: none;
+}
+.service-box:hover .tamreed-ehgez{
+    display: block;
+}
+.service-box:hover .elag-tabe3y-box{
+    display: none;
+}
+.service-box:hover .elag-tabe3y-ehgez{
+    display: block;
+}
+.ashe3a-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+}
+.ashe3a-ehgez{
+    display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+}
+.ashe3a-ehgez .btn-book{
+    margin: 70px 0;
+}
+.service-box:hover .ashe3a-box{
+    display: none;
+}
+.service-box:hover .ashe3a-ehgez{
+    display: block;
+}
+
+.ta7aleel-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+}
+.ta7aleel-ehgez{
+    display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+}
+.ta7aleel-ehgez .btn-book{
+    margin: 70px 0;
+}
+.service-box:hover .ta7aleel-box{
+    display: none;
+}
+.service-box:hover .ta7aleel-ehgez{
+    display: block;
+}
+.mokeem-box{
+    width: 100%;
+    background-color: #478E9E;
+    display: block;
+    border-radius: 14px;
+}
+.mokeem-ehgez{
+    display: none;
+    height: 198px;
+    width: 100%;
+    border-bottom-left-radius:30% ;
+    background-color: #478E9E;
+    border-radius: 14px 14px 14px 60%;
+}
+.mokeem-ehgez .btn-book{
+    margin: 70px 0;
+}
+.service-box:hover .mokeem-box{
+    display: none;
+}
+.service-box:hover .mokeem-ehgez{
+    display: block;
 }
 
 .service-box img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
+    width: 130px;
+    height: 130px;
+    margin: 15px 0;
 }
 
 .service-box p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 /* Testimonial Section */
@@ -354,11 +499,6 @@ hr{background-color: white;}
   }
   .container-doctor-img:hover .overlay {
     opacity: 1;
-  }
-
-  .DD{
-    background-color: #F2F2E7;
-    width: 100%;
   }
 
   .image {
@@ -667,12 +807,12 @@ p {
 }
 
 .main-heading {
-    font-size: 2.8rem;
     font-weight: bold;
     color: white;
 }
 
 .highlight {
+    font-size: 2.8rem;
     color: #ff3f7d; /* Pink color matching the button */
 }
 
@@ -703,4 +843,24 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+
+
+
+
+.btn-book {
+    background-color: #083b4d; /* Dark teal for button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 200px;
+    font-size: 30px;
+}
+
+.btn-book:hover {
+    background-color: #062f3d; /* Darker teal on hover */
 }
