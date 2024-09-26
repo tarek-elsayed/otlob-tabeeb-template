@@ -70,11 +70,13 @@
                         <form id="appointmentForm">
                             <div class="form-group">
                                 <label for="name">الاسم الثلاثي</label>
-                                <input type="text" class="form-control" id="name" placeholder="اكتب اسمك الثلاثي" required>
+                                <input type="text" class="form-control" id="name" placeholder="اكتب اسمك الثلاثي" >
+                                <div class="error" id="nameError"></div>
                             </div>
                             <div class="form-group">
                                 <label for="phone">رقم الهاتف</label>
-                                <input type="text" class="form-control" id="phone" placeholder="أدخل رقم هاتفك" required>
+                                <input type="text" class="form-control" id="phone" placeholder="أدخل رقم هاتفك" >
+                                <div class="error" id="mobileError"></div>
                             </div>
                             <div class="form-group">
                                 <label for="specialty">اختر التخصص المطلوب</label>
@@ -85,8 +87,9 @@
                                     <option value="orthopedics">العظام</option>
                                     <option value="pediatrics">الأطفال</option>
                                 </select>
+                                <div class="error" id="specialtyError"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary">احجز الآن</button>
+                            <button type="submit" class=" btn-color">احجز الآن</button>
                         </form>
                     </div>
                 </div>

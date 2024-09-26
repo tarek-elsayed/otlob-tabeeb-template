@@ -18,6 +18,10 @@ body {
 .form-group label{
 display: flex;
 }
+.form-group .btn-book{
+    width: 40%;
+    margin: 0;
+}
 .header-section{
     background-color: #4A909D;
     background: transparent url('img/Paper.png') 0% 0% no-repeat padding-box;
@@ -41,16 +45,34 @@ hr{background-color: white;}
 }
 .form-box-header h4{
     margin-top: 22px;
-    /* margin-left: 145px; */
 }
 .form-box-header p{
     line-height: 0;
-    /* margin-bottom: 0; */
 }
 .form-control::placeholder {
     color: #b0b0b0;
 }
+.btn-color{
+    width: 40%;
+    font-size: 22px;
+    background-color: #083b4d; /* Dark teal for button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn-color:hover {
+    background-color: #062f3d; /* Darker teal on hover */
+}
 
+
+.error {
+    color: red;
+    font-size: 16px;
+    display: flex;
+}
 .btn {
     background-color: #013731;
     border: none;
@@ -105,9 +127,7 @@ hr{background-color: white;}
     position: relative;
     width: 200px;
     z-index: 2;
-    /* height: 200px; */
-  /* background-color: #f0f0f0; */
-    /* width: 200px; */
+   
 }
 .bottom-div{
     border-top-left-radius: 20px;
@@ -116,7 +136,6 @@ hr{background-color: white;}
   top: 0;
   left: 160px;
   width: 120px;
-  /* height: 200px; */
   background-color: #f04f88;
   transition: left 0.3s ease-in-out;
   z-index: 1;
@@ -133,7 +152,6 @@ hr{background-color: white;}
     color: #00414F;
     font-weight: 900;
     font-size: 40px;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .span-icon{
@@ -166,7 +184,6 @@ hr{background-color: white;}
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +206,6 @@ hr{background-color: white;}
     color: white; /* White text color */
     font-weight: bold;
     direction: rtl; /* Right to left text for Arabic */
-    /* display: block; */
 }
 
 .ads-text {
@@ -201,10 +217,8 @@ hr{background-color: white;}
 .service-box {
     background-color: #E8308A;
     border-radius: 15px;
-    /* padding: 20px; */
     margin: 15px 0;
     color: white;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 .visit-tabeeb-now-box{
     width: 100%;
@@ -403,21 +417,6 @@ hr{background-color: white;}
     margin: 15px 0 40px;
 }
 
-/* .testimonial-content {
-    margin-top: 20px;
-}
-
-.testimonial-user {
-    display: flex;
-    align-items: center;
-}
-
-.testimonial-user img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    margin-right: 15px;
-} */
 
 .user-info {
     text-align: right;
@@ -471,31 +470,26 @@ hr{background-color: white;}
     margin-left: 8px;
     margin-bottom: 15px;
     position: relative;
-    /* padding-right: 30px; */
 }
 
 .features-list li::before {
-    /* content: "<i class="fa-solid fa-circle-check"></i>";
-    color: #2ECC71; */
+    
     position: absolute;
     right: 0;
     top: 0;
 }
 
 .doctor-container{
-    /* width: 100%; */
     background-color: #F2F2E7;
 }
 .container-banner {
     position: relative;
     width: 100%;
-    /* background-color: #005248; */
   }
 
 .container-img {
     position: relative;
     width: 100%;
-    /* background-color: #005248; */
   }
   .container-doctor-img {
     position: relative;
