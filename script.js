@@ -59,4 +59,83 @@
         }
 
     }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const testimonials = [
+            {
+                name: "محمد زيد",
+                text: "هذا النص هو مثال للنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا النص من مولد النص العربي.",
+                image: "./img/avtar.jpg",
+                rating: 4,
+                website: "www.yourwebsite.com"
+            },
+            {
+                name: "أحمد علي",
+                text: "مثال آخر للنصوص العربية. هذا نص تجريبي لتوضيح كيف يمكن أن يعمل العرض الديناميكي للتقييمات.",
+                image: "./img/avtar.jpg",
+                rating: 5,
+                website: "www.anotherwebsite.com"
+            },
+            {
+                name: "سارة محمد",
+                text: "تجربة رائعة ومفيدة جداً. سوف أنصح الجميع بالتجربة!",
+                image: "./img/avtar.jpg",
+                rating: 3,
+                website: "www.example.com"
+            }
+        ];
+        
+        // العنصر الذي سيتم عرض المحتوى فيه
+        const testimonialContainer = document.getElementById('testimonial');
+        
+        // متغير لتعقب التقييم الحالي
+        let currentTestimonial = 0;
+        
+        // وظيفة لعرض التقييم بناءً على الفهرس الحالي
+        function displayTestimonial(index) {
+            const { name, text, image, rating, website } = testimonials[index];
+            
+            // إنشاء الـ HTML ديناميكيًا
+            document.getElementById('testimonial').innerHTML = `
+                <div class="profile">
+                    <img src="${image}" alt="${name}" class="profile-image">
+                </div>
+                <h3>${name}</h3>
+                <p>${text}</p>
+                <div class="rating1">
+                    ${generateStars(rating)}
+                </div>
+                <p class="website">${website}</p>
+            `;
+        }
+        
+        // وظيفة لتوليد النجوم بناءً على التقييم
+        function generateStars(rating) {
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= rating) {
+                    starsHtml += '<span class="star filled"><i class="fa-solid fa-star"></i></span>';
+                } else {
+                    starsHtml += '<span class="star"><i class="fa-regular fa-star"></i></span>';
+                }
+            }
+            return starsHtml;
+        }
+        
+        // عرض أول تقييم عند تحميل الصفحة
+        displayTestimonial(currentTestimonial);
+        
+        // أزرار التنقل بين التقييمات
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            displayTestimonial(currentTestimonial);
+        });
+        
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            displayTestimonial(currentTestimonial);
+        });
+        
+    })
 })();

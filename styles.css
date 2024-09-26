@@ -1,7 +1,8 @@
 body {
     background-color: #4A909D;
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
     text-align: center;
+    font-family: 'Cairo', sans-serif;
     direction: rtl;
 }
 
@@ -93,7 +94,7 @@ hr{background-color: white;}
     color: white;
     font-weight: 900;
     font-size: 60px;
-    font-family: fantasy
+    /* font-family: fantasy */
     
 }
 .re2aya-tabeeb{
@@ -171,7 +172,7 @@ hr{background-color: white;}
 }
 /* Services Section */
 .services-section {
-    background-color: #F9F9F9;
+    background-color: #F2F2E7;
     padding: 40px 0;
     margin-top: 40px;
 }
@@ -208,6 +209,7 @@ hr{background-color: white;}
     direction: rtl; /* Right to left text for Arabic */
 }
 
+
 .ads-text {
     font-size: 0.8rem; /* Small 'ADS' text */
     top: 10px; /* Adjust 'ADS' upwards */
@@ -225,11 +227,12 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
 
 }
 .visit-tabeeb-now-ehgez{
    display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -241,10 +244,12 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
+
 }
 .tamreed-ehgez{
     display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -255,10 +260,11 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
 }
 .elag-tabe3y-ehgez{
     display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -297,10 +303,12 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
+
 }
 .ashe3a-ehgez{
     display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -321,10 +329,12 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
+
 }
 .ta7aleel-ehgez{
     display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -344,10 +354,12 @@ hr{background-color: white;}
     background-color: #478E9E;
     display: block;
     border-radius: 14px;
+    height: 230px;
+
 }
 .mokeem-ehgez{
     display: none;
-    height: 198px;
+    height: 230px;
     width: 100%;
     border-bottom-left-radius:30% ;
     background-color: #478E9E;
@@ -458,7 +470,7 @@ hr{background-color: white;}
     list-style: none;
     padding: 5px;
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .features-list li {
