@@ -4,9 +4,9 @@
     const form = document.getElementById('appointmentForm');
     form.addEventListener('submit', function (event) {
         if (!form.checkValidity()) {
-            event.preventDefault();
             event.stopPropagation();
         }
+        event.preventDefault();
         validateForm();
     }, false);
 
