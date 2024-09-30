@@ -895,3 +895,125 @@ p {
 .btn-book:hover {
     background-color: #062f3d; /* Darker teal on hover */
 }
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تخصيص التوسيط الأفقي للعناصر */
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+/* تهيئة الصفحة لتكون أكثر تجاوبًا مع الهواتف */
+@media (max-width: 768px) {
+    /* توسيط الأزرار والنصوص والصور على الأجهزة الصغيرة */
+    .header-content, .otlob-tabeeb-service, .footer-content, .testimonial-section, .form-box {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .form-box {
+        background-color: #f04f88;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 30px;
+        color: #fff;
+        width: 400px;
+    }
+    .parent-contact-now{
+        margin-top: 20px;
+    }
+    .contact-now {
+        background: white;
+        border-radius: 20px;
+        position: relative;
+        width: 215px;
+        z-index: 2;
+        height: 55px;
+    }
+
+    .bottom-div {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        top: 0;
+        left: 185px;
+        width: 95px;
+        background-color: #f04f88;
+        transition: left 0.3s ease-in-out;
+        z-index: 1;
+        display: inline-block;
+        height: 55px;
+    }
+
+    /* تعديل عرض الصور لتتناسب مع حجم الشاشة */
+    .image, .image1, .doctor-features-image, .doctor-features-image1 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* تعديل الأزرار لتكون في المنتصف */
+    .btn-color, .btn-pink {
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* ضبط العناصر بحيث تكون على شكل عمودي */
+    .service-box, .form-box, .testimonial {
+        margin-bottom: 20px;
+    }
+    .testimonial {
+        margin-top: 30px;
+    }
+    .container-banner {
+        padding: 20px 0;
+    }
+
+    .container-banner .row {
+        flex-direction: column; /* ترتيب العناصر فوق بعضها */
+    }
+
+    .btn-book {
+        /* جعل الزر يأخذ عرض الصفحة بالكامل */
+        font-size: 16px;
+    }
+
+    .image-container img {
+        max-width: 80%; /* تصغير الصورة قليلاً على الجوال */
+    }
+    .section-title, .features-list, .otlob-tabeeb {
+        margin: 20px auto;
+    }
+    
+    .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner {
+        background-color: #4c9ba1;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100px;
+        
+    }
+    .banner-text {
+        font-size: 1rem; /* Bigger Arabic font */
+        color: white; /* White text color */
+        font-weight: bold;
+        direction: rtl; /* Right to left text for Arabic */
+    }
+}
+
+/* تحسين التباعد والتوسيط داخل الأقسام */
