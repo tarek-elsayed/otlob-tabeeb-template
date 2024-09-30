@@ -11,7 +11,7 @@
     }, false);
 
     function validateForm() {
-        debugger
+
         let name = document.getElementById("name").value.trim();
         let mobile = document.getElementById("phone").value.trim();
         let specialty = document.getElementById("specialty").value;
